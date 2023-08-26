@@ -8,12 +8,12 @@ import { searchBooksByTitle } from "../../util/book.api";
 
 const BookList = ({books}) => {
 
-    console.log(books)
+    
 
     if (books) {
         return (
             <StyledBookList>
-                {books.map((book, index) => (
+                {books.items.map((book, index) => (
                     <BookItem 
                         key={index}
                         imageUrl={book.imageUrl.smallThumbnail}
